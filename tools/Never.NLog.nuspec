@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Never.NLog</id>
+    <title>Never.NLog</title>
+    <authors>Never</authors>
+    <owners>Never</owners>
+    <version>1.0.0</version>
+    <tags>nlog</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <repository type="git" url="https://github.com/shelldudu/never_component"></repository>
+    <language>zh-cn</language>
+    <description>never component</description>
+    <summary>never component</summary>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1" >
+        <dependency id="Never" version="1.0.0" />
+        <dependency id="NLog" version="4.5.11" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Never" version="1.0.0" />
+        <dependency id="NLog" version="4.5.11" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Never.NLog\bin\Release\net461\App_Config\nlog.config" target="content/App_Config"/>
+
+    <file src="..\Never.NLog\bin\Never.NLog.xml" target="lib/net461"/>
+    <file src="..\Never.NLog\bin\Release\net461\Never.NLog.dll" target="lib/net461"/>
+    <file src="..\Never.NLog\bin\Release\net461\Never.NLog.pdb" target="lib/net461"/>
+
+    <file src="..\Never.NLog\bin\Never.NLog.xml" target="lib/NETStandard2.0"/>
+    <file src="..\Never.NLog\bin\Release\netstandard2.0\Never.NLog.dll" target="lib/NETStandard2.0"/>
+    <file src="..\Never.NLog\bin\Release\netstandard2.0\Never.NLog.pdb" target="lib/NETStandard2.0"/>
+  </files>
+</package>

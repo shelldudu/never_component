@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Never.QuartzNET</id>
+    <title>Never.QuartzNET</title>
+    <authors>Never</authors>
+    <owners>Never</owners>
+    <version>1.0.0</version>
+    <tags>quartzNET</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <repository type="git" url="https://github.com/shelldudu/never_component"></repository>
+    <language>zh-cn</language>
+    <description>never component</description>
+    <summary>never component</summary>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1" >
+        <dependency id="Never" version="1.0.0" />
+        <dependency id="Quartz" version="3.0.7" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Never" version="1.0.0" />
+        <dependency id="Quartz" version="3.0.7" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Never.QuartzNET\bin\Never.QuartzNET.xml" target="lib/net461"/>
+    <file src="..\Never.QuartzNET\bin\Release\net461\Never.QuartzNET.dll" target="lib/net461"/>
+    <file src="..\Never.QuartzNET\bin\Release\net461\Never.QuartzNET.pdb" target="lib/net461"/>
+
+    <file src="..\Never.QuartzNET\bin\Never.QuartzNET.xml" target="lib/NETStandard2.0"/>
+    <file src="..\Never.QuartzNET\bin\Release\netstandard2.0\Never.QuartzNET.dll" target="lib/NETStandard2.0"/>
+    <file src="..\Never.QuartzNET\bin\Release\netstandard2.0\Never.QuartzNET.pdb" target="lib/NETStandard2.0"/>
+  </files>
+</package>

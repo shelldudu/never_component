@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.IoC.Autofac", "Never.IoC.Autofac\Never.IoC.Autofac.csproj", "{3F6F2663-8AC8-4457-9040-E071B5672905}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.JsonNet", "Never.JsonNet\Never.JsonNet.csproj", "{AF2164A3-DD11-4C9D-9F29-6DA88DAE7C31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.Log4net", "Never.Log4net\Never.Log4net.csproj", "{097EF8AE-613D-482E-A4D5-D4784A843956}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.MemCached", "Never.MemCached\Never.MemCached.csproj", "{6492B44E-B8F3-46EE-9F6C-3D00F0781EC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.NLog", "Never.NLog\Never.NLog.csproj", "{2A74607F-907D-4755-A432-F0F972A56684}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.ProtoBuf", "Never.ProtoBuf\Never.ProtoBuf.csproj", "{228F9CF3-5157-4500-B315-EFFCB8FCEB5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.QuartzNET", "Never.QuartzNET\Never.QuartzNET.csproj", "{C52A3A63-BD79-4C32-A9FE-0D1A389C703C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.RabbitMQ", "Never.RabbitMQ\Never.RabbitMQ.csproj", "{817C1770-8491-47D5-8931-B8A17C580B0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.RedisCache", "Never.RedisCache\Never.RedisCache.csproj", "{DA46F142-1538-491B-AE08-18A65341A62D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.IoC.StructureMap", "Never.IoC.StructureMap\Never.IoC.StructureMap.csproj", "{20A626BD-82C9-4390-BED9-A9C219C6B2C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Never.SqliteRecovery", "Never.SqliteRecovery\Never.SqliteRecovery.csproj", "{DE0E5751-07CD-4DEF-A38D-C34F34ADC1A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F6F2663-8AC8-4457-9040-E071B5672905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6F2663-8AC8-4457-9040-E071B5672905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6F2663-8AC8-4457-9040-E071B5672905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6F2663-8AC8-4457-9040-E071B5672905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2164A3-DD11-4C9D-9F29-6DA88DAE7C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2164A3-DD11-4C9D-9F29-6DA88DAE7C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2164A3-DD11-4C9D-9F29-6DA88DAE7C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2164A3-DD11-4C9D-9F29-6DA88DAE7C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097EF8AE-613D-482E-A4D5-D4784A843956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097EF8AE-613D-482E-A4D5-D4784A843956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097EF8AE-613D-482E-A4D5-D4784A843956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097EF8AE-613D-482E-A4D5-D4784A843956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6492B44E-B8F3-46EE-9F6C-3D00F0781EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6492B44E-B8F3-46EE-9F6C-3D00F0781EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6492B44E-B8F3-46EE-9F6C-3D00F0781EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6492B44E-B8F3-46EE-9F6C-3D00F0781EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A74607F-907D-4755-A432-F0F972A56684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A74607F-907D-4755-A432-F0F972A56684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A74607F-907D-4755-A432-F0F972A56684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A74607F-907D-4755-A432-F0F972A56684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228F9CF3-5157-4500-B315-EFFCB8FCEB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228F9CF3-5157-4500-B315-EFFCB8FCEB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228F9CF3-5157-4500-B315-EFFCB8FCEB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228F9CF3-5157-4500-B315-EFFCB8FCEB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52A3A63-BD79-4C32-A9FE-0D1A389C703C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52A3A63-BD79-4C32-A9FE-0D1A389C703C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52A3A63-BD79-4C32-A9FE-0D1A389C703C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52A3A63-BD79-4C32-A9FE-0D1A389C703C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817C1770-8491-47D5-8931-B8A17C580B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817C1770-8491-47D5-8931-B8A17C580B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817C1770-8491-47D5-8931-B8A17C580B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817C1770-8491-47D5-8931-B8A17C580B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA46F142-1538-491B-AE08-18A65341A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA46F142-1538-491B-AE08-18A65341A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA46F142-1538-491B-AE08-18A65341A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA46F142-1538-491B-AE08-18A65341A62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A626BD-82C9-4390-BED9-A9C219C6B2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A626BD-82C9-4390-BED9-A9C219C6B2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A626BD-82C9-4390-BED9-A9C219C6B2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A626BD-82C9-4390-BED9-A9C219C6B2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0E5751-07CD-4DEF-A38D-C34F34ADC1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0E5751-07CD-4DEF-A38D-C34F34ADC1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0E5751-07CD-4DEF-A38D-C34F34ADC1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0E5751-07CD-4DEF-A38D-C34F34ADC1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98FF3BAD-84CC-482A-91DB-F008915B25CC}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal
