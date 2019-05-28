@@ -1,1 +1,1 @@
-# never_component
+围绕never的ApplicationStartup所进行注册相应的第三方组件
