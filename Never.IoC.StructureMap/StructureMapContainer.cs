@@ -155,7 +155,7 @@ namespace Never.IoC.StructureMap
             //注入生命周期管理
             this.builder.BuildUp(this);
             var scope = this.builder;
-            var locator = new StructureMapServiceLocator(scope);
+            var locator = new StructureMapServiceLocator(scope) { ScopeTracker = this.scopeTracker };
             this.serviceLocator = locator;
             this.serviceActivator = locator;
 

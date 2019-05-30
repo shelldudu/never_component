@@ -162,7 +162,7 @@ namespace Never.IoC.Autofac
 
             //注入生命周期管理
             var scope = this.builder.Build();
-            var locator = new AutofacServiceLocator(scope);
+            var locator = new AutofacServiceLocator(scope) { ScopeTracker = this.scopeTracker };
             this.serviceLocator = locator;
             this.serviceActivator = locator;
 
