@@ -15,11 +15,11 @@
     <summary>never component</summary>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1" >
-        <dependency id="Never" version="1.0.1" />
+        <dependency id="Never" version="1.0.4" />
         <dependency id="StructureMap" version="4.7.0" />
       </group>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Never" version="1.0.1" />
+        <dependency id="Never" version="1.0.4" />
         <dependency id="StructureMap" version="4.7.0" />
       </group>
     </dependencies>

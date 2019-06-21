@@ -5,7 +5,7 @@
     <title>Never.SqliteRecovery</title>
     <authors>Never</authors>
     <owners>Never</owners>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <tags>sqlite</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
@@ -15,11 +15,11 @@
     <summary>never component</summary>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1" >
-        <dependency id="Never" version="1.0.0" />
+        <dependency id="Never" version="1.0.4" />
         <dependency id="System.Data.SQLite.Core" version="1.0.109.2" />
       </group>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Never" version="1.0.0" />
+        <dependency id="Never" version="1.0.4" />
         <dependency id="Microsoft.Data.Sqlite.Core" version="2.2.0" />
         <dependency id="SQLitePCLRaw.bundle_e_sqlite3" version="1.1.12" />		
       </group>
