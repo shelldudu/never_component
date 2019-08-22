@@ -53,7 +53,7 @@ namespace Never.IoC.StructureMap
             if (onStarting != null)
                 ioc.OnStarting += (s, e) => { var builder = e.Collector as IStructureMapContainer; builder.Configure(x => { onStarting.Invoke(x, e.TypeFinder, e.Assemblies); }); };
 
-            startup.RegisterStartService(true, (x) => ioc.Startup());
+            startup.InsertIntoFinalStartService((x) => ioc.Startup());
             startup.ReplaceServiceLocator(ioc.ServiceLocator);
             startup.ReplaceServiceRegister(ioc.ServiceRegister);
             ContainerContext.Current = ioc;

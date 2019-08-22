@@ -52,7 +52,7 @@ namespace Never.IoC.Autofac
             if (onStarting != null)
                 ioc.OnStarting += (s, e) => { onStarting.Invoke((ContainerBuilder)e.Collector, e.TypeFinder, e.Assemblies); };
 
-            startup.RegisterStartService(true, (x) => ioc.Startup());
+            startup.InsertIntoFinalStartService((x) => ioc.Startup());
             startup.ReplaceServiceLocator(ioc.ServiceLocator);
             startup.ReplaceServiceRegister(ioc.ServiceRegister);
             ContainerContext.Current = ioc;

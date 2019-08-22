@@ -75,5 +75,53 @@ namespace Never.QuartzNET
             startup.Items["UseQuartzNET"] = "t";
             return startup;
         }
+
+        /// <summary>
+        /// 检查job的构造函数
+        /// </summary>
+        /// <param name="startup"></param>
+        /// <param name="method"></param>
+        /// <returns></returns>
+        public static ApplicationStartup UseForceCheckQuartzJobCtor(this ApplicationStartup startup, Never.IoC.ResolveMethod method = ResolveMethod.ResolveOptional)
+        {
+            if (startup.Items.ContainsKey("UseForceCheckQuartzJobCtor"))
+                return startup;
+
+            return startup.RegisterStartService(true, (x) =>
+            {
+                var types = x.TypeFinder.FindClassesOfType<IJob>(x.FilteringAssemblyProvider.GetAssemblies(), true);
+                if (types.IsNotNullOrEmpty())
+                {
+                    using(var sc = x.ServiceLocator.BeginLifetimeScope())
+                    {
+                        switch (method)
+                        {
+                            case ResolveMethod.Resolve:
+                                {
+                                    foreach (var type in types)
+                                    {
+                                        sc.Resolve(type, string.Empty);
+                                    }
+                                }
+                                break;
+                            case ResolveMethod.ResolveOptional:
+                                {
+                                    foreach (var type in types)
+                                    {
+                                        sc.ResolveOptional(type);
+                                    }
+                                }
+                                break;
+                            case ResolveMethod.ResolveTriable:
+                                {
+
+                                }
+                                break;
+                        }
+
+                    }
+                }
+            });
+        }
     }
 }

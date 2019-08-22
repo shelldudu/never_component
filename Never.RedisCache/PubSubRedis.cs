@@ -169,6 +169,40 @@ namespace Never.RedisCache
             return rowId > 0;
         }
 
+        /// <summary>
+        /// 向缓存中插入某一项，默认为10分钟过期
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key">键值</param>
+        /// <param name="obj">要插入的值</param>
+        /// <returns></returns>
+        public bool Add<T>(string key, T obj)
+        {
+            return Add(key, obj, TimeSpan.Zero);
+        }
+
+        /// <summary>
+        /// 向缓存中插入某一项
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key">键值</param>
+        /// <param name="obj">要插入的值</param>
+        /// <param name="ts">缓存中过期时间</param>
+        /// <returns></returns>
+        public bool Add<T>(string key, T obj, TimeSpan ts)
+        {
+            if (string.IsNullOrEmpty(key))
+                throw new ArgumentNullException("缓存的key不能为空");
+
+            if (obj == null)
+                return false;
+
+            var db = redis.GetSubscriber();
+            var json = jsonSerializer.Serialize(obj);
+            var rowId = db.Publish(new RedisChannel(key, RedisChannel.PatternMode.Literal), json);
+            return rowId > 0;
+        }
+
         #endregion ICaching 成员
 
         #region IDisposable成员
