@@ -15,11 +15,11 @@
     <summary>never component</summary>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1" >
-        <dependency id="Never" version="1.0.5.4" />
+        <dependency id="Never" version="1.0.5.3" />
         <dependency id="Quartz" version="3.0.7" />
       </group>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Never" version="1.0.5.4" />
+        <dependency id="Never" version="1.0.5.3" />
         <dependency id="Quartz" version="3.0.7" />
       </group>
     </dependencies>
