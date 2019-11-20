@@ -16,11 +16,11 @@
     <dependencies>
       <group targetFramework=".NETFramework4.6.1" >
         <dependency id="Never" version="1.0.5.3" />
-        <dependency id="Autofac" version="4.8.1" />
+        <dependency id="Autofac" version="4.9.2" />
       </group>
       <group targetFramework=".NETStandard2.0">
         <dependency id="Never" version="1.0.5.3" />
-        <dependency id="Autofac" version="4.8.1" />
+        <dependency id="Autofac" version="4.9.2" />
       </group>
     </dependencies>
     <frameworkAssemblies>
